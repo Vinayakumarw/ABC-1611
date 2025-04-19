@@ -5,10 +5,8 @@ Step:2
   - we created multi-stage Dockerfile with name of Dockerfile
   - building the image using the Dockerfile
     cmd: docker build -t test .
-    image ID : 77a03358dd66
   - creating the container using build image name-test
      cmd: docker run -it -d --name test test:1.0 /bin/bash
-     container ID: 6bc970e11f75
 Step:3
   - creating tag using the image
     cmd : docker tag test:latest vinayakumar.azurecr.io/test
